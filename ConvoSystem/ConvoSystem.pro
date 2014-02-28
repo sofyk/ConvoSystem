@@ -1,9 +1,7 @@
 # Add more folders to ship with the application, here
 folder_01.source = qml/ConvoSystem
 folder_01.target = qml
-uiElements.source = UI_Elements
-DEPLOYMENTFOLDERS += folder_01 \
-    uiElements
+DEPLOYMENTFOLDERS = folder_01
 
 # Additional import path used to resolve QML modules in Creator's code model
 QML_IMPORT_PATH =
