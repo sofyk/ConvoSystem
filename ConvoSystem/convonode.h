@@ -13,6 +13,8 @@
 #include <npcfield.h>
 using namespace std;
 
+class PlayerField;
+
 class ConvoNode
 {
     char *nodeId;
@@ -21,6 +23,7 @@ class ConvoNode
     std::vector<PlayerField> playerFields;
     int currentPField;
 public:
+    ConvoNode();
     ConvoNode(int nNum);
 //    delConvoNode();
     string getNodeId();

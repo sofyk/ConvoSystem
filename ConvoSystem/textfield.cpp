@@ -8,7 +8,7 @@ TextField::TextField(){}
 TextField::TextField(string fId){
     fieldId = fId;
 }
-/*TextField::TextField(const TextField &textField){
+TextField::TextField(const TextField &textField){
     fieldId = textField.fieldId;
     fieldText = textField.fieldText;
 }*/

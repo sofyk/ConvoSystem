@@ -13,9 +13,9 @@ TextField PlayerField::getTextField(){
 }
 
 void PlayerField::setNextNode(ConvoNode nextN){
-    nextNode = nextN;
+    nextNode = &nextN;
 }
 
 ConvoNode PlayerField::getNextNode(){
-    return nextNode;
+    return *nextNode;
 }

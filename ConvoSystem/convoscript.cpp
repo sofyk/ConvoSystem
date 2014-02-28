@@ -6,7 +6,7 @@ ConvoScript::ConvoScript(){
 
 void ConvoScript::addNode(){
     currentNode++;
-    ConvoNode node = new ConvoNode(currentNode);
+    ConvoNode node = ConvoNode(currentNode);
     script.push_back(node);
 }
 

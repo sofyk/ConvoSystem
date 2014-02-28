@@ -1,8 +1,10 @@
 #include "convonode.h"
 
+ConvoNode::ConvoNode(){}
+
 ConvoNode::ConvoNode(int nNum){
    nodeNum = nNum;
-   nodeId = itoa(nNum);
+   itoa(nNum, nodeId, 10);
    currentPField = -1;
 }
 
@@ -11,7 +13,7 @@ string ConvoNode::getNodeId(){
 }
 
 void ConvoNode::setNodeId(string nId){
-    nodeId = nId.c_str();
+    nodeId = (char*)nId.c_str();
 }
 
 void ConvoNode::addNpcField(NpcField nField){
@@ -20,6 +22,6 @@ void ConvoNode::addNpcField(NpcField nField){
 
 void ConvoNode::addPlayerField(){
     currentPField++;
-    PlayerField pField = new PlayerField(currentPField);
+    PlayerField pField = PlayerField(currentPField);
     playerFields.push_back(pField);
 }

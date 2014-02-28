@@ -14,6 +14,7 @@ class NpcField
 {
     TextField textField;
 public:
+    NpcField();
     void setTextField(TextField tField);
     TextField getTextField();
 };
